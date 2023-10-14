@@ -104,17 +104,17 @@ const Navbar = () => {
                 {/* Mobile menu, show/hide based on menu state */}
                 <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <Link href="/">
-                            <button onClick={toggleMenu} className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Home</button>
+                        <Link onClick={toggleMenu} href="/">
+                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Home</button>
                         </Link>
-                        <Link href="/products">
-                            <button onClick={toggleMenu} className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Products</button>
+                        <Link onClick={toggleMenu} href="/products">
+                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Products</button>
                         </Link>
-                        <Link href="/about">
-                            <button onClick={toggleMenu} className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">About</button>
+                        <Link onClick={toggleMenu} href="/about">
+                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">About</button>
                         </Link>
-                        <Link href="/contact">
-                            <button onClick={toggleMenu} className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Contact</button>
+                        <Link onClick={toggleMenu} href="/contact">
+                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Contact</button>
                         </Link>
                     </div>
                 </div>
