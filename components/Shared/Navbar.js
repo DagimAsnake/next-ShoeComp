@@ -105,16 +105,16 @@ const Navbar = () => {
                 <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         <Link href="/">
-                            <p className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Home</p>
+                            <button onClick={toggleMenu} className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Home</button>
                         </Link>
                         <Link href="/products">
-                            <p className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Products</p>
+                            <button onClick={toggleMenu} className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Products</button>
                         </Link>
                         <Link href="/about">
-                            <p className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">About</p>
+                            <button onClick={toggleMenu} className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">About</button>
                         </Link>
                         <Link href="/contact">
-                            <p className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Contact</p>
+                            <button onClick={toggleMenu} className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Contact</button>
                         </Link>
                     </div>
                 </div>
