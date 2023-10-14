@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { FaShoePrints } from 'react-icons/fa';
 import OurValues from '@/components/OtherPages/Ourvalues';
+import CompaniesInfo from '@/components/OtherPages/CompaniesInfo';
+import Work from '@/components/OtherPages/Work';
 
 const Home = () => {
   const iconVariants = {
@@ -54,6 +56,8 @@ const Home = () => {
           <FaShoePrints />
         </motion.div>
       </div>
+      <Work />
+      <CompaniesInfo />
       <OurValues />
     </>
   );
