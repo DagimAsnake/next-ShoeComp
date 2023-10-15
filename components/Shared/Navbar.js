@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Link from "next/link";
+import Link from 'next/link';
 
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
             initial="hidden"
             animate={isVisible ? 'visible' : 'hidden'}
         >
-            <nav className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500">
+            <nav className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 fixed top-0 w-full z-10">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center">
@@ -44,16 +44,24 @@ const Navbar = () => {
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">
                                 <Link href="/">
-                                    <p className="text-gray-200 hover:text-white hover:underline px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Home</p>
+                                    <p className="text-gray-200 hover:text-white hover:underline px-3 py-2 rounded-md text-lg font-semibold transition duration-300">
+                                        Home
+                                    </p>
                                 </Link>
                                 <Link href="/products">
-                                    <p className="text-gray-200 hover:text-white hover:underline px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Products</p>
+                                    <p className="text-gray-200 hover:text-white hover:underline px-3 py-2 rounded-md text-lg font-semibold transition duration-300">
+                                        Products
+                                    </p>
                                 </Link>
                                 <Link href="/about">
-                                    <p className="text-gray-200 hover:text-white hover:underline px-3 py-2 rounded-md text-lg font-semibold transition duration-300">About</p>
+                                    <p className="text-gray-200 hover:text-white hover:underline px-3 py-2 rounded-md text-lg font-semibold transition duration-300">
+                                        About
+                                    </p>
                                 </Link>
                                 <Link href="/contact">
-                                    <p className="text-gray-200 hover:text-white hover:underline px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Contact</p>
+                                    <p className="text-gray-200 hover:text-white hover:underline px-3 py-2 rounded-md text-lg font-semibold transition duration-300">
+                                        Contact
+                                    </p>
                                 </Link>
                             </div>
                         </div>
@@ -74,12 +82,7 @@ const Navbar = () => {
                                     stroke="currentColor"
                                     aria-hidden="true"
                                 >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M4 6h16M4 12h16M4 18h16"
-                                    />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
                                 <svg
                                     className="hidden h-6 w-6"
@@ -89,12 +92,7 @@ const Navbar = () => {
                                     stroke="currentColor"
                                     aria-hidden="true"
                                 >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
                         </div>
@@ -105,16 +103,24 @@ const Navbar = () => {
                 <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         <Link onClick={toggleMenu} href="/">
-                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Home</button>
+                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">
+                                Home
+                            </button>
                         </Link>
                         <Link onClick={toggleMenu} href="/products">
-                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Products</button>
+                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">
+                                Products
+                            </button>
                         </Link>
                         <Link onClick={toggleMenu} href="/about">
-                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">About</button>
+                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">
+                                About
+                            </button>
                         </Link>
                         <Link onClick={toggleMenu} href="/contact">
-                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">Contact</button>
+                            <button className="text-gray-200 hover:text-white hover:underline block px-3 py-2 rounded-md text-lg font-semibold transition duration-300">
+                                Contact
+                            </button>
                         </Link>
                     </div>
                 </div>
